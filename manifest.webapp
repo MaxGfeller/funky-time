@@ -1,0 +1,17 @@
+{
+    "name": "Funky Tunes",
+    "description": "Stream music",
+    "launch_path": "/index.html",
+    "developer": {
+        "name": "Max Gfeller",
+        "url": "www.maxgfeller.com"
+    },
+    "permissions": {
+        "systemXhr": {
+            "description": "Used to make requests to youtube"
+        },
+        "audio-channel-content":{
+            "description": "Use the audio channel for the music player"
+        }
+    }
+}

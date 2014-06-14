@@ -1,0 +1,32 @@
+{
+  "name": "funkytime",
+  "version": "0.0.0",
+  "description": "Streaming music player for Firefox OS",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests/test-*.js",
+    "watch-css": "catw $(cat build/styles) -o static/bundle.css",
+    "watch-js": "watchify app.js -t brfs -d -v -o static/bundle.js",
+    "watch-dev": "npm run watch-css & npm run watch-js",
+    "build-css": "cat $(cat build/styles) > static/bundle.css",
+    "build-js": "browserify app.js -t brfs > static/bundle.js",
+    "build": "npm run build-css && npm run build-js"
+  },
+  "author": "Max Gfeller",
+  "license": "proprietary",
+  "dependencies": {
+    "browserify-widget": "~0.0.0",
+    "domify": "^1.2.2",
+    "youtube-best-video": "0.0.6",
+    "youtube-mp3": "^0.1.0",
+    "youtube-search": "^0.1.2"
+  },
+  "devDependencies": {
+    "brfs": "^1.1.1",
+    "browserify": "^4.1.10",
+    "catw": "^0.2.0",
+    "tape": "^2.13.3",
+    "uglifyjs": "^2.3.6",
+    "watchify": "^0.10.2"
+  }
+}
