@@ -6,7 +6,7 @@ body {
 .player {
     opacity: 0;
     /*visibility: hidden;*/
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
