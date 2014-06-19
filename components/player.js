@@ -12,7 +12,7 @@ function Player() {
 
 Player.prototype.play = function(item) {
     this.show();
-    console.log(item);
+    document.querySelector('.thumbnail').src = item.thumbnail;
     youtubeMp3.getDownloadLink(item.url, function(err, result) {
         console.log('in cb');
         if(err) return alert(err);
