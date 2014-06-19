@@ -14,7 +14,8 @@ var search = function(val) {
         results.forEach(function(result) {
             list.addItem({
                 text: result.title,
-                url: result.url
+                url: result.url,
+                thumbnail: result.thumbnails.shift().url
             });
         });
     });
