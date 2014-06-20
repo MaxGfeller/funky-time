@@ -7,7 +7,7 @@
         "url": "www.maxgfeller.com"
     },
     "permissions": {
-        "systemXhr": {
+        "systemXHR": {
             "description": "Used to make requests to youtube"
         },
         "audio-channel-content":{
