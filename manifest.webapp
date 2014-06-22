@@ -2,6 +2,7 @@
     "name": "Funky Tunes",
     "description": "Stream music",
     "launch_path": "/index.html",
+    "type": "privileged",
     "developer": {
         "name": "Max Gfeller",
         "url": "www.maxgfeller.com"
